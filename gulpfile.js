@@ -7,7 +7,7 @@ var webserver = require('gulp-webserver');
 
 //concatena los js y los convierte en script, guardados en dist
 gulp.task('script', function(){
-	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/materialize-css/dist/js/materialize.js', 'assets/js/*.js'])
+	gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/materialize-css/dist/ js/materialize.js', 'assets/js/*.js'])
 	.pipe(concat('script.js'))
 	.pipe(gulp.dest('dist/js/'));
 });
@@ -31,11 +31,6 @@ gulp.task('webserver', function(){
 	}));
 });
 
-/*------ Watch SASS ------*/
-gulp.task('watch', function(){
-	gulp.watch('assets/sass/*.scss',['style']);
-});
-
 //Aqui se le indica a gulp cuales son las tareas que debera ejecutar al hacer correr el comando gulp
-gulp.task('default', ['script', 'style', 'webserver', 'watch']);
+gulp.task('default', ['script', 'style', 'webserver']);
 

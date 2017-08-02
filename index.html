@@ -4,10 +4,8 @@
 	<title>Tea Lovers</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">         
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">	
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css"> 
-	<link rel="stylesheet" href="dist/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body>
@@ -36,10 +34,10 @@
 	<section class="seccion_uno">
 	 <!--  imágen de fondo, logo,  -->
 	 <div class="container">
+	 <img class="leaf" src="dist/img/logo.png">
 			<div class="row">
 				<div class="col l12 m12 s12">
-					<img class="logo" src="dist/img/logo.png">
-					<img src="dist/img/tea-lovers-logo.png">
+					<img class="logo-lovers" src="dist/img/tea-lovers-logo.png">
 				</div> <!-- col  -->
 			</div> <!-- row -->
 		</div> <!-- container -->
@@ -49,7 +47,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col l12 m12 s12">
-					<iframe src="https://player.vimeo.com/video/148993635" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe class="video" src="https://player.vimeo.com/video/148993635" width="100%" height="100%" frameborder="0" allowfullscreen mozallowfullscreen webkitallowfullscreen></iframe>
 				</div>
 			</div> <!-- row -->
 		</div> <!-- container -->
@@ -75,7 +73,7 @@
 					<div class="row">
 						<div class="col l2 offset-l1 col m2 offset m1 col s12">
 							<h3>Negro</h3>
-								<p>Disminuye la absorción de colesterol y reduce la posibilidad de sufrir enfermedades cardiovasculares</p>
+								<p>Disminuye la absorción de colesterol y reduce la posibilidad de sufrir enfermedades cardiovasculares.</p>
 						</div>
 						<div class="col l2 col m2 col s12">
 							<h3>Verde</h3>
@@ -101,27 +99,29 @@
 
 	<section class="seccion_cinco">
 		<!-- HOVER EN LAS IMÁGENES CON TRANSPARENCIA GRIS Y AGRANDA DESDE EL MEDIO -->
-		<div class="container">
+		<div class="container">			
 			<div class="row">
-				<div class="col l6">
+				<div class="col l6 mujer">
 					<h4>¿Todas las infusiones son té?</h4>
-				</div> <!-- col 6 -->
-				<div class="row">
-					<div class="col lg 6">
-						<h4>¿Tiene la misma cafeína que el café?</h4>					
+			  </div> <!-- col6 -->
+					
+				<div class="col l6 socks"> <!-- segunda mitad -->
+					<div class="col l6">
+						<h4>¿Tiene la misma cafeína que el café?</h4>
 					</div>
-					<div class="col lg 6">
+					<div class="col l6 cereal">
 						<h4>¿Cuál es la diferencia entre las bolsitas de té y el té a granel o en pirámides?</h4>
-					</div>
-				</div> <!-- row 2 -->
-				<div class="row">
-					<div class="col lg 12">
-						<h4>¿Se pueden mezclar distintos tipos de té para hacer una infusión?</h4>
-					</div>
-				</div>
+					</div>						
+					<div class="row">
+						<div class="col l12 nails">
+							<h4>¿Se pueden mezclar distintos tipos de té para hacer una infusión?</h4>
+						</div>						
+					</div> <!-- row abajo -->	
+				</div> <!-- col 6 2da mitad -->
 			</div> <!-- row -->
 		</div> <!-- container -->
 	</section>
+
 	<section class="seccion_seis">
 		<div class="container">
 			<div class="row">
@@ -230,13 +230,7 @@
 		<img class="logo" src="dist/img/logo.png">
 		<p>Dirección Té Encanto: Av. Italia 1317, Providencia.</p>
 	</footer>
-	
-	<!-- jquery -->	  
-	<script src="http://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script> 
-	<!-- materialize --> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>  
+
   <!-- js -->
 	<script type="text/javascript" src="dist/js/script.js"></script>
 </body>

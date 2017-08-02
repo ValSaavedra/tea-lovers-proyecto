@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "jquery": "^3.2.1",
-    "materialize": "^1.0.0"
+    "materialize": "^1.0.0",
+    "materialize-css": "^0.100.1"
   }
 }
