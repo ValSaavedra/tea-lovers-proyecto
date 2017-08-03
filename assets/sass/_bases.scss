@@ -1,6 +1,10 @@
 * {
   font-family:$font;
 
+.leaf{
+  margin-top:0;
+ @include logo-leaf(); 
+}
 }
 
 .container{
@@ -23,33 +27,17 @@
   margin-top: 14px;
   width: 65%;
 }
-.leaf{
-  margin-top:0;
- @include logo-leaf();
- 
+.section_uno .leaf{
+  @include logo-leaf(); 
 }
+
 
 //seccion_dos
 
-/*iframe{
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
-  position: fixed;
-  min-width: 100%;
-  max-width: 100%;
+.seccion_dos iframe{
+  width:100%; 
   min-height: 100vh;
-  max-height: 100vh;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-} */
+}
 
 
 //seccion tres
@@ -57,13 +45,27 @@
   background-image: url('../img/fondo-about.jpg');
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%;
+  width: 100%;  
+  margin-top: -25px;
 }
 
-.seccion_tres h1 p{
+.seccion_tres{
+   h1{
+    @include titulos-grandes() 
+  }
+
+  p{
   color: $color_text_titulo;
+  font-size: 23px;
+  text-align: left;
+  margin-left: 388px;
+  }
 }
-
+.section_tres .leaf{
+  
+ @include logo-leaf(); 
+}
+  
 //seccion cuatro
 .seccion_cuatro{
   height:50vh;
@@ -83,23 +85,51 @@
 }
 
   //seccion cinco
+.seccion_cinco h4{
+  font-size: 10px;
+  font-size: bold;
+  text-align:center;
+}
+
+.seccion_cinco .mujer h4{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.seccion_cinco .socks h4{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.seccion_cinco .cereal h4{
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.seccion_cinco .nails h4{
+  margin-top: 30px;
+  margin-left: 20px;
+}
 .seccion_cinco .mujer{
   background-image: url('../img/min-video-1-2.jpg');
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
+  margin:0!important;
   }
 .seccion_cinco .socks{
   background-image: url('../img/min-video-3.jpg');
-  background-size: no-repeat;
+  background-repeat: no-repeat;
   height: 50vh;
   width: 100%;
+  margin:0 !important;
 }
 .seccion_cinco .cereal{
   background-image: url('../img/min-video-5.jpg');
   background-repeat: no-repeat;
   height: 50vh;
   width: 100%;
+  margin:0 !important;
   }
 
 .seccion_cinco .nails{
@@ -107,12 +137,15 @@
   background-repeat: no-repeat;
   height: 50vh;
   width: 100%;
+  margin:0!important;
 }
 
 .seccion_cinco h4{
   color: $color_text_titulo;
   font-size: 20px;
 }
+
+//seccion seis
 
 .seccion_seis{
   background-image: url('../img/disfruta (1).jpg');
@@ -121,7 +154,12 @@
   width:100%;
 }
 .seccion_seis h1{
-  color: $color_text_titulo;
+  @include titulos-grandes() 
+}
+
+.section_seis .leaf{
+  
+ @include logo-leaf(); 
 }
 
 //seccion siete
@@ -143,3 +181,50 @@
   height: 100vh;
 }
 
+.section_ocho .leaf{
+  
+ @include logo-leaf();
+}
+
+h1{
+  @include titulos-grandes()
+}
+
+//seccion nueve
+.seccion_nueve{
+
+}
+
+.seccion_nueve .leaf{
+ 
+ @include logo-leaf();
+ 
+}
+
+//seccion diez
+.seccion_diez .textos-diez{
+  margin-left: 20px;
+
+}
+.seccion_diez .leaf{
+  
+ @include logo-leaf();
+}
+
+
+
+//footer
+.footer{
+  background-color: #3B3B3B;
+  height: 4em;
+  }
+
+  .footer .container p{
+    color: #5F6058;
+    margin-left: 20px;
+  }
+
+.footer .container .leaf{
+ @include logo-leaf();
+ 
+}
